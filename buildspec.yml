@@ -9,8 +9,8 @@ phases:
         - mvn clean prepare-package war:exploded
   post_build:
        commands:
-         -echo "Entered Post-build phase"
+         - echo "Entered Post-build phase"
         - mv target/deploy ./
 artifacts:
   files:
-  -deploy/**/*
+    - deploy/**/*
