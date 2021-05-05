@@ -10,7 +10,9 @@ public class WelcomeController{
 
     @GetMapping
     public String welcome(){
-        return "Welcome to Cloud Application Development!";
+        return "<h1>Welcome to Cloud Application Development! /n We used the Following Cloud services: ElasticBeanstalk, EC2,S3, CodeBuild, CodeDeploy and Cloudwatch<h1/>";
+
+
     }
 
 }
