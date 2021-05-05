@@ -1,16 +1,17 @@
-version: 0.2
-phases:
-  pre_build:
-      commands:
-        - echo "Pre-build phases begins"
-  build:
-      commands:
-        - echo "Entered build phase"
-        - mvn clean prepare-package war:exploded
-  post_build:
-       commands:
-         - echo "Entered Post-build phase"
-        - mv target/deploy ./
+---
 artifacts:
   files:
     - deploy/**/*
+phases:
+  build:
+    commands:
+      - "echo \"Entered build phase\""
+      - "mvn clean prepare-package war:exploded"
+  post_build:
+    commands:
+      - "echo \"Entered Post-build phase\""
+      - "mv target/deploy ./"
+  pre_build:
+    commands:
+      - "echo \"Pre-build phases begins\""
+version: 0.2
