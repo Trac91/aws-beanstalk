@@ -12,4 +12,5 @@ phases:
          -echo "Entered Post-build phase"
         - mv target/deploy ./
 artifacts:
+  files:
   -deploy/**/*
