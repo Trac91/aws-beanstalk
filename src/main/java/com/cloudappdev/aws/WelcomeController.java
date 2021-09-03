@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WelcomeController{
     @GetMapping
     public String welcome(){
-        return "<h1>Welcome to Cloud Application Development! /n Thiss application used the Following Cloud services: ElasticBeanstalk,, EC2,S3, CodeBuild, CodeDeploy and Cloudwatch!!!!<h1/>";
+        return "<h1>Welcome to Cloud Application Development! /n Thiss application used the Following Cloud services: ElasticBeanstalk,,. EC2,S3, CodeBuild, CodeDeploy and Cloudwatch!!!!<h1/>";
 
     }
 }
